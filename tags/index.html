@@ -1,86 +1,68 @@
-<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All tags - 成都安创建筑材料有限责任公司</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="shortcut icon" href="./../media/website/logo2.png" type="image/x-icon"><style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style><link rel="stylesheet" href="./../assets/css/style.css?v=c2e372bddeb9555c84823280eaedd11f"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"成都安创建筑材料有限责任公司","logo":"./../media/website/logo1-2.png","url":"./../"}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"><style>/* 容器 */
-    .splide-container {
-        margin: 30px 0;
-        clear: both;
-    }
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All tags - 成都安创建筑材料有限责任公司</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="shortcut icon" href="./../media/website/logo2.png" type="image/x-icon"><style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style><link rel="stylesheet" href="./../assets/css/style.css?v=c2e372bddeb9555c84823280eaedd11f"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"成都安创建筑材料有限责任公司","logo":"./../media/website/logo1-2.png","url":"./../"}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"><style>/* 容器底部留白 */
+  .splide-container {
+    margin: 30px 0;
+    clear: both;
+  }
 
-    .splide {
-        padding-bottom: 50px !important;
-    }
+  .splide {
+    padding-bottom: 30px !important; /* 留出底部空间 */
+  }
 
-    /* 图片核心样式 - 重点修复循环消失问题 */
-    .splide__slide img {
-        width: 100%;
-        height: 250px !important;
-        object-fit: cover !important;
-        display: block !important;
-        border-radius: 8px;
-        
-        /* 关键修复：提升到独立渲染层，解决克隆 slide 闪烁/消失 */
-        transform: translateZ(0);
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        will-change: transform;
-    }
+  /* 图片样式 */
+  .splide__slide img {
+    width: 100%;
+    height: 250px !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 8px;
+  }
 
-    /* 克隆 slide 强制显示 */
-    .splide__slide.is-clone img {
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
+  .splide__slide {
+    min-height: 250px; /* 保证占位 */
+  }
 
-    /* 滑动过程中强制显示 */
-    .splide.is-moving .splide__slide img {
-        opacity: 1 !important;
-    }
+  /* 文字链接块 */
+  .splide__slide a {
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    display: block !important;
+    position: relative !important;
+    color: #333333 !important;
+  }
 
-    /* 文字链接块 */
-    .splide__slide a {
-        text-decoration: none !important;
-        border: none !important;
-        outline: none !important;
-        display: block !important;
-        position: relative !important;
-        color: #333333 !important;
-    }
+  /* 文字描述 */
+  .slide-caption {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    padding: 15px 5px !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    color: #000000 !important;
+    background: transparent !important;
+    word-break: break-all;
+  }
 
-    /* 文字描述 */
-    .slide-caption {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        text-align: center !important;
-        padding: 15px 5px !important;
-        font-size: 20px !important;
-        font-weight: 700 !important;
-        line-height: 1.4 !important;
-        color: #000000 !important;
-        background: transparent !important;
-        word-break: break-all;
-    }
+  /* 悬停效果 */
+  .splide__slide a:hover img { opacity: 0.9; }
+  .splide__slide a:hover .slide-caption { color: #007bff !important; }
 
-    /* 悬停效果 */
-    .splide__slide a:hover img {
-        opacity: 0.9;
-    }
-    .splide__slide a:hover .slide-caption {
-        color: #007bff !important;
-    }
+  /* 圆点分页 */
+  .splide__pagination {
+    bottom: 0 !important;
+    transform: translateY(0) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
-    /* 分页器 */
-    .splide__pagination {
-        bottom: 0 !important;
-        transform: translateY(0) !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    .splide__pagination__page {
-        background: #ccc !important;
-    }
-    .splide__pagination__page.is-active {
-        background: #333 !important;
-        transform: scale(1.2);
-    }</style></head><body><div class="site-container"><header class="top" id="js-header"><a class="logo" href="./../"><img src="./../media/website/logo1-2.png" alt="成都安创建筑材料有限责任公司" width="517" height="280"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="./../gong-si-jian-jie.html" target="_self">关于我们</a></li><li class="has-submenu"><span class="is-separator" aria-haspopup="true">产品系统方案</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="./../cai-gang-ban-wu-qiang-mian-wei-hu-xi-tong.html" target="_self">彩钢板屋墙面围护系统</a></li><li><a href="./../gao-fen-zi-juan-cai-wu-mian-fang-shui-xi-tong.html" target="_self">高分子卷材防水屋面系统</a></li><li><a href="./../tao-tu-ban-mu-qiang-xi-tong.html" target="_self">陶土板幕墙系统</a></li></ul></li><li><a href="./../chan-pin-zhan-shi.html" target="_self">产品展示</a></li><li><a href="./../ke-hu-an-li.html" target="_self">客户案例</a></li><li><a href="./../lian-xi-wo-men.html" target="_self">联系我们</a></li></ul></nav></header><main><div class="hero"><figure class="hero__image hero__image--overlay"><img src="./../media/website/Tu-Pian-1.jpg" srcset="./../media/website/responsive/Tu-Pian-1-xs.jpg 300w, ./../media/website/responsive/Tu-Pian-1-sm.jpg 480w, ./../media/website/responsive/Tu-Pian-1-md.jpg 768w, ./../media/website/responsive/Tu-Pian-1-lg.jpg 1024w, ./../media/website/responsive/Tu-Pian-1-xl.jpg 1360w, ./../media/website/responsive/Tu-Pian-1-2xl.jpg 1600w" sizes="(max-width: 1600px) 100vw, 1600px" loading="eager" width="1915" height="846" alt=""></figure><header class="hero__content"><div class="wrapper"><h1>Tags <sup>(0)</sup></h1><p>Collection of all tags</p></div></header></div><div class="wrapper"><ul class="feed feed--grid"></ul></div></main><footer class="footer"><div class="footer__copyright"><p class="align-center"><span style="color: #34495e;"><strong>成都安创建筑材料有限责任公司</strong></span><br><span style="color: #34495e;">地址：四川省成都市武侯区一环路南一段6号</span><br><span style="color: #34495e;">企业微信：<span style="color: #169179;"><em><a href="https://work.weixin.qq.com/ca/cawcde77891fe63e1e" target="_blank" rel="noopener" style="color: #169179;">成都安创</a></em></span>   </span><br><span style="color: #34495e;">企业QQ：2324969578</span><br><span style="color: #34495e;">电子邮箱：anchuang@live.com</span><br><span style="color: #34495e;">电话│传真：028 8502 7608</span></p></div><button class="footer__bttop js-footer__bttop" aria-label="Back to top"><svg><title>Back to top</title><use xlink:href="./../assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = {    
+  .splide__pagination__page { background: #ccc !important; }
+  .splide__pagination__page.is-active {
+    background: #333 !important;
+    transform: scale(1.2);
+  }</style></head><body><div class="site-container"><header class="top" id="js-header"><a class="logo" href="./../"><img src="./../media/website/logo1-2.png" alt="成都安创建筑材料有限责任公司" width="517" height="280"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="./../gong-si-jian-jie.html" target="_self">关于我们</a></li><li class="has-submenu"><span class="is-separator" aria-haspopup="true">产品系统方案</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="./../cai-gang-ban-wu-qiang-mian-wei-hu-xi-tong.html" target="_self">彩钢板屋墙面围护系统</a></li><li><a href="./../gao-fen-zi-juan-cai-wu-mian-fang-shui-xi-tong.html" target="_self">高分子卷材防水屋面系统</a></li><li><a href="./../tao-tu-ban-mu-qiang-xi-tong.html" target="_self">陶土板幕墙系统</a></li></ul></li><li><a href="./../chan-pin-zhan-shi.html" target="_self">产品展示</a></li><li><a href="./../ke-hu-an-li.html" target="_self">客户案例</a></li><li><a href="./../lian-xi-wo-men.html" target="_self">联系我们</a></li></ul></nav></header><main><div class="hero"><figure class="hero__image hero__image--overlay"><img src="./../media/website/Tu-Pian-1.jpg" srcset="./../media/website/responsive/Tu-Pian-1-xs.jpg 300w, ./../media/website/responsive/Tu-Pian-1-sm.jpg 480w, ./../media/website/responsive/Tu-Pian-1-md.jpg 768w, ./../media/website/responsive/Tu-Pian-1-lg.jpg 1024w, ./../media/website/responsive/Tu-Pian-1-xl.jpg 1360w, ./../media/website/responsive/Tu-Pian-1-2xl.jpg 1600w" sizes="(max-width: 1600px) 100vw, 1600px" loading="eager" width="1915" height="846" alt=""></figure><header class="hero__content"><div class="wrapper"><h1>Tags <sup>(0)</sup></h1><p>Collection of all tags</p></div></header></div><div class="wrapper"><ul class="feed feed--grid"></ul></div></main><footer class="footer"><div class="footer__copyright"><p class="align-center"><span style="color: #34495e;"><strong>成都安创建筑材料有限责任公司</strong></span><br><span style="color: #34495e;">地址：四川省成都市武侯区一环路南一段6号</span><br><span style="color: #34495e;">企业微信：<span style="color: #169179;"><em><a href="https://work.weixin.qq.com/ca/cawcde77891fe63e1e" target="_blank" rel="noopener" style="color: #169179;">成都安创</a></em></span>   </span><br><span style="color: #34495e;">企业QQ：2324969578</span><br><span style="color: #34495e;">电子邮箱：anchuang@live.com</span><br><span style="color: #34495e;">电话│传真：028 8502 7608</span></p></div><button class="footer__bttop js-footer__bttop" aria-label="Back to top"><svg><title>Back to top</title><use xlink:href="./../assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = {    
         mobileMenuMode: 'sidebar',
         animationSpeed: 300,
         submenuWidth: 'auto',
@@ -98,55 +80,50 @@
                 }, false);
             }
         }</script><script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>document.addEventListener('DOMContentLoaded', function () {
-        var el = document.getElementById('main-carousel');
-        if (el) {
-            var splide = new Splide('#main-carousel', {
-                type: 'loop',
-                perPage: 3,
-                perMove: 1,
-                gap: '20px',
-                autoplay: true,
-                interval: 2500,
-                speed: 800,
-                easing: 'ease-out',
+  var el = document.getElementById('main-carousel');
+  if (!el) return;
 
-                pauseOnHover: true,
-                pauseOnFocus: false,
-                resetProgress: false,
+  // 等待所有图片加载完成再初始化
+  var images = el.querySelectorAll('img');
+  var loadedCount = 0;
 
-                arrows: true,
-                pagination: true,
+  function checkAllLoaded() {
+    loadedCount++;
+    if (loadedCount === images.length) {
+      initSplide();
+    }
+  }
 
-                // 重要修复选项
-                preloadPages: 3,
-                updateOnMove: true,
-                lazyLoad: false,
-                clones: 4,                    // 根据你8张图可适当增加
+  images.forEach(function(img) {
+    if (img.complete) {
+      checkAllLoaded();
+    } else {
+      img.addEventListener('load', checkAllLoaded);
+      img.addEventListener('error', checkAllLoaded);
+    }
+  });
 
-                breakpoints: {
-                    1024: { perPage: 2 },
-                    640: { perPage: 1 }
-                }
-            });
+  if (images.length === 0) initSplide();
 
-            splide.mount();
-
-            // 挂载完成后强制重绘，解决 Cloudflare 缓存环境下的渲染问题
-            splide.on('mounted', function () {
-                setTimeout(() => {
-                    window.dispatchEvent(new Event('resize'));
-                    // 额外强制刷新克隆 slide
-                    document.querySelectorAll('.splide__slide.is-clone img').forEach(img => {
-                        img.style.opacity = '1';
-                    });
-                }, 300);
-            });
-
-            // 每次滑动结束后也强制刷新（双重保险）
-            splide.on('moved', function () {
-                setTimeout(() => {
-                    window.dispatchEvent(new Event('resize'));
-                }, 50);
-            });
-        }
-    });</script></body></html>
+  function initSplide() {
+    new Splide('#main-carousel', {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      gap: '20px',
+      autoplay: true,
+      interval: 2500,
+      speed: 800,
+      easing: 'ease-out',
+      pauseOnHover: true,
+      pauseOnFocus: false,
+      resetProgress: false,
+      arrows: true,
+      pagination: true,
+      breakpoints: {
+        1024: { perPage: 2 },
+        640: { perPage: 1 }
+      }
+    }).mount();
+  }
+});</script></body></html>
